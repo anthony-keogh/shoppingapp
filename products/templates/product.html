@@ -1,0 +1,40 @@
+{% extends 'base.html' %}  {% load static %} 
+{% block content %}
+<div class="container"  >
+  <h2 style="color:black; text-shadow:2px 2px white;">Your Order </h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/static/img/fitting-room.jpg" alt="Lights" class="img-rounded" style="width:350px; height:400px;">
+      </div>
+    
+      <div class="col-md-6">
+        <div>
+          <p class="product-font">Name of product
+            <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;"><span class="glyphicon glyphicon-heart" style="color:black;" ng-click="count2 = count2 + 1"></span></a>
+          </p>
+      </div>   
+        
+          <form method="post" role="form" style="height:100px;" >
+          {% csrf_token %}
+            <div>{{ sizefittingform }}
+              <button type="submit" style="background: rgb(231,2,221);background: linear-gradient(90deg, rgba(231,2,221,1) 23%, rgba(254,96,239,1) 58%, rgba(255,0,254,1) 100%);height:40px; width:70px; color:white;">Submit</button>
+            </div>
+          </form>
+
+      
+          <a href="{% url 'purchase_product' %}" target="_blank">
+            <button style="background: rgb(231,2,221);background: linear-gradient(90deg, rgba(231,2,221,1) 23%, rgba(254,96,239,1) 58%, rgba(255,0,254,1) 100%);height:60px; width:80px; color:white;">BUY</button>
+          </a>
+            <button style="background: rgb(9,9,9);background: linear-gradient(90deg, rgba(9,9,9,1) 38%, rgba(121,121,121,1) 83%, rgba(161,161,161,1) 100%);height:60px; width:120px; color:white;"ng-click="count = count + 1">ADD TO CART</button>
+          </a>
+          <div style="height:50px;"></div>
+            <p style="font-size:20px; color:#b002ad;">Free Delivery if you spend over €70</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="height:50px;"></div>
+{% endblock %}

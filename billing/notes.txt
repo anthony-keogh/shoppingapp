@@ -1,0 +1,51 @@
+from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+from .forms import DonationForm, DonateValueForm
+from .models import Donate
+from django.conf import settings
+import stripe
+
+# Create your views here.
+stripe.api_key = settings.STRIPE_SECRET
+
+@login_required()
+def donate(request):
+    if request.method=="POST":
+        donation_form = DonationForm(request.POST)  ### get the user to submit this form using the post method to db
+        donate_value_form = DonateValueForm(request.POST)  ### get the user to submit this form using the post method to db
+        
+        if donate_value_form.is_valid() and donation_form.is_valid():   ### the two forms above must be valid, and this is done using built in method called .is_valid
+            donation_value = donate_value_form.save(commit=False)  ### Then save the users information using the .save() method
+            user = request.user   ### your crate a variable called user, which will handle all that specific request a user has
+            donation_value.user = user  ### You now creating a variable called donation_value.user, which will save the users donation which the user requesting and the give it the a user request value
+            total = donation_value.donation  ### Then save the users information using the .save() method and place inside an object called donation
+            donation_value.save()  ### save the changes of donation_value
+            
+            try:
+                customer = stripe.Charge.create(    ### https://stripe.com/docs/api/charges/create
+                    amount = int(total * 100),
+                    currency = "EUR",
+                    description = request.user.username,
+                    card = donation_form.cleaned_data['stripe_id'],
+                )
+            except stripe.error.CardError:    ### https://stripe.com/docs/api/errors
+                messages.error(request, "Your card was declined!")
+                
+            if customer.paid:
+                messages.error(request, "You have successfully donated, thank you!")
+                return render(request, "index.html")
+            else:
+                messages.error(request, "Unable to take payment")
+        
+        else:
+            print(donation_form.errors)
+            messages.error(request, "We were unable to take a payment with that card!")
+    else:
+        donation_form = DonationForm()
+        donate_value_form = DonateValueForm
+        
+    return render(request, "donate.html", {'donation_form': donation_form, 'donate_value_form': donate_value_form, 'publishable': settings.STRIPE_PUBLISHABLE})
+
+
+#### https://stripe.com/docs/api/connected_accounts

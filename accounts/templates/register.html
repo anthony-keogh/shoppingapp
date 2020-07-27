@@ -1,0 +1,18 @@
+{% extends 'base.html' %}  {% load static %} 
+{% block content %}
+<div class="container" style="height:600px;display: flex;
+    justify-content: center;
+    align-items: center;" ng-non-bindable>
+  <div class="col-6">
+ <h1 class="login-h1" style="color:#bd02ac; padding:10px;text-shadow:2px 2px white; border-bottom: 1px solid black;">Register</h1>
+<br><br>
+<form method="post"  >
+  {% csrf_token %}
+  {{ userform }}
+  <br>
+  <button type="submit" style="background: rgb(231,2,221);
+    background: linear-gradient(90deg, rgba(231,2,221,1) 23%, rgba(254,96,239,1) 58%, rgba(255,0,254,1) 100%);height:40px; width:70px; color:white;">Register</button>
+</form>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}  {% load static %} 
+
+{% block content %}
+
+<h1 style="color:black; text-shadow:2px 2px white;">Your Cart</h1>
+ <div class="well text-center" style="background: rgb(82,0,80);background: linear-gradient(90deg, rgba(82,0,80,1) 14%, rgba(135,2,139,1) 53%, rgba(255,0,254,1) 100%);">
+   <div class="col-md-12"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div style="height:70px;"></div>
+            <h2>Your Account Information</h2>
+              <div style="height:50px;"></div>
+                <p class="profile-paragraph"></p>
+          </div>
+
+        <div class="col-md-6" style="background: rgb(6,6,6);background: linear-gradient(90deg, rgba(6,6,6,1) 33%, rgba(66,66,66,1) 63%, rgba(105,106,106,1) 100%);">
+          <div style="height:70px;"></div>
+            <h2>Billing Information</h2>
+              <div style="height:50px;"></div>
+                <p class="profile-paragraph"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
