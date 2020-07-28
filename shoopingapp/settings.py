@@ -168,10 +168,12 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
 from django.urls import reverse_lazy
 
-AUTH_USER_MODEL = 'user.User'
+#AUTH_USER_MODEL = 'user.User'
 
 #LOGIN_URL = 'login' 
 #LOGOUT_URL = 'logout'
 #LOGIN_REDIRECT_URL = '/'
 
 django_heroku.settings(locals())
+
+SECRET_KEY = 'e9jlwx(!uq3$+bq-hy)w6swtshh^4955gt*6i_os##)9lq3lov'
