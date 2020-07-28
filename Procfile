@@ -1,1 +1,1 @@
-web: gunicorn djangoproject.wsgi:application
+web: gunicorn shoopingapp.wsgi:application
