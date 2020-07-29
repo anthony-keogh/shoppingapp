@@ -35,7 +35,7 @@ else:
     SECRET_KEY = 'thesecretkey'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['zara-grace.herokuapp.com']
 
