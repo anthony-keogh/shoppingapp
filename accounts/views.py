@@ -17,6 +17,10 @@ def register(request):
         userform = UserRegistrationForm(request.POST)
         if userform.is_valid():
             userform.save()
+
+             user = auth.authenticate(request.POST.get('email'),
+                                     password=request.POST.get('password1'))
+                                     
             messages.success(request, 'You have successfully created an account')
             return redirect('register')
  
