@@ -168,7 +168,7 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
 from django.urls import reverse_lazy
 
-#AUTH_USER_MODEL = 'user.User'
+AUTH_USER_MODEL = 'user.User'
 
 #LOGIN_URL = 'login' 
 #LOGOUT_URL = 'logout'
