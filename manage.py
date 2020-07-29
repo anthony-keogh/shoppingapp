@@ -3,8 +3,11 @@
 import os
 import sys
 
-#if __name__ == "__main__":
-def main():
+
+
+
+if __name__ == "__main__":
+#def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'shoopingapp.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -16,9 +19,12 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+    
 
-if __name__ == '__main__':
-    main()
+
+#if __name__ == '__main__':
+#    main()
+
 
 
 ##py C:\Users\User\Desktop\shopping\shoopingapp\manage.py runserver
