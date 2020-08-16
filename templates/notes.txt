@@ -1,0 +1,98 @@
+{$ count $}
+{$ count2 $}
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.count = 0;
+});
+
+app.controller('myCtrl', function($scope) {
+    $scope.count2 = 0;
+});
+
+var app = angular.module('myApp').config(function($interpolateProvider) {
+    $interpolateProvider.startSymbol('{$');
+    $interpolateProvider.endSymbol('$}');
+});
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+ng-app="myApp" ng-controller="myCtrl" 
+
+ng-click="count2 = count2 + 1"
+
+
+$('#likes').click(function(){
+    var catid;
+    catid = $(this).attr("data-catid");
+    $.get('like_category/', {category_id: catid}, function(data){
+               $('#like_count').html(data);
+               $('#likes').hide();
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+@login_required(login_url='login')
+def clicked_love(request):
+
+    click_love_id = None
+    if request.method == 'POST':
+        click_love = cart_form(request.POST)
+        click_love.save()
+        print(click_love)
+
+@login_required(login_url='login')
+def your_cart(request):
+    
+    return render(request, 'your_cart.html')
+
+
+#@login_required(login_url='login')
+#def cart_clicked(request):
+  #  a=0
+  #  if request.method=='POST':
+      #  clicking_cart = cart_form(request.POST)
+       # if clicking_cart.is_valid():
+         #   a +=1
+          #  clicking_cart.save()
+           
+            
+    
+
+    return HttpResponse(like_1)    
+ 
+   # else:
+   #     clicking_cart = cart_form()
+        
+  #  return render(request,{'clicking_cart':clicking_cart, 'a':a})
+
+
+@login_required(login_url='login')
+def like_cart(request):
+
+    clicking_cart = None
+    if request.method == 'POST':
+        clicking_cart = cart_form(request.POST)
+
+    like_1 = 0
+    if clicking_cart:
+        cart = Cart.objects.get(id=int(the_cat_id))
+        if cart:
+            like_1 = cart.like_1 + 1
+            cart.like_1 =  like_1
+            cart.save()
+            
+    
+
+    return HttpResponse(like_1)

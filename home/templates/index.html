@@ -23,16 +23,18 @@ background: linear-gradient(90deg, rgba(254,35,246,1) 41%, rgba(244,109,252,1) 7
   <h2>Dresses</h2>
   <div class="row">
     <div class="col-md-4">
-      
+     
         <a href="{% url 'product' %}" target="_blank">
           <img src="static/img/flower-blue-dress.jpeg" alt="Lights" class="img-rounded" style="width:100%; height:370px;">
           <br>
          <p  class=" product-label white-font" ><span style="color:white!important;">Blue Jeans </span>
-             <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;">
-             <span class="glyphicon glyphicon-heart" style="color:black;" ng-click="count2 = count2 + 1"></span>
-             </a>
           
-             <button  class="glyphicon glyphicon-shopping-cart"  ng-click="count = count + 1"></button>
+             <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;">
+             <span class="glyphicon glyphicon-heart" style="color:black;" id="like_2" ng-click="count2 = count2 + 1"></span>
+             </a>
+             
+             <button  class="glyphicon glyphicon-shopping-cart" id="like_1"  ng-click="count = count + 1"></button>
+             
           <span style="margin-left:20%;color:black;" >$75</span>
           </p>
         </a>
@@ -48,7 +50,7 @@ background: linear-gradient(90deg, rgba(254,35,246,1) 41%, rgba(244,109,252,1) 7
              <span class="glyphicon glyphicon-heart" style="color:black;" ng-click="count2 = count2 + 1"></span>
              </a>
           
-             <button  class="glyphicon glyphicon-shopping-cart"  ng-click="count = count + 1"></button>
+             <button  class="glyphicon glyphicon-shopping-cart" ng-click="count = count + 1"></button>
           <span style="margin-left:20%;color:black;" >$75</span>
           </p>
         </a>

@@ -7,6 +7,7 @@ from products.forms import size_form
 # Create your views here.
 
 def coats(request):
+    
     return render(request, 'coats.html')
 
 def dresses(request):

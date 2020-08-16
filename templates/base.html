@@ -9,17 +9,31 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="{% static 'js/main.js' %}"></script>
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
 <title>{% block title %}ZaraGrace{% endblock %}</title>
+
+
+
+  <script type="text/javascript" src="{% static 'carts/angularjs-app/runtime.js' %}"></script>
+  <script type="text/javascript" src="{% static 'carts/angularjs-app/polyfills.js' %}"></script>
+  <script type="text/javascript" src="{% static 'carts/angularjs-app/styles.js' %}"></script>
+  <script type="text/javascript" src="{% static 'carts/angularjs-app/vendor.js' %}"></script>
+  <script type="text/javascript" src="{% static 'carts/angularjs-app/main.js' %}"></script>
+ 
+
+
+
 </head>
 
 
-<body ng-app="myApp" ng-controller="myCtrl" >   
-  <nav class="navbar navbar-inverse"  >
+<body ng-app="myApp" ng-controller="myCtrl">   
+  <nav class="navbar navbar-inverse"   >
     <div class="container-fluid bck-color">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -77,7 +91,7 @@
           </a>
         </li>
         <li>
-          <a href="{% url 'loved_product' %}" class="btn btn-info btn-lg shop-icon">
+          <a href="" class="btn btn-info btn-lg shop-icon">
             <div></div>
             <span class="glyphicon glyphicon-heart">
               <span  style="color:black;" >
@@ -86,9 +100,9 @@
           </a>
         </li>
         <li>
-          <a href="{% url 'your_cart' %}" class="btn btn-info btn-lg shop-icon">
+          <a href="" class="btn btn-info btn-lg shop-icon">
             <span class="glyphicon glyphicon-shopping-cart">
-              <span  style="color:black;" >
+              <span  style="color:black;"  >
                 {$ count $}
               </span>
             </span>
@@ -101,7 +115,7 @@
 
 <div class="container-fluid below-navbar">
   <h5 style="color:white; text-align:center; font-size:20px; margin-top:18px;">
-  Free Delivery if you spend over €70
+  Free Delivery if you spend over €100
   </h5>
 </div>  
 
@@ -134,6 +148,9 @@
             <p class="white-font">
             Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,consectetur adipisicing elit.
             </p>
+            <div style="height:120px;"></div>
+            <img src="/static/img/social.png" style="height:50px; width:150px; 
+   margin-top:-150px;">
       </div>
       <!-- Grid column -->
 
@@ -207,6 +224,7 @@
     <!-- Grid row -->
   </div>
   <!-- Footer Links -->
+  
 </footer>
 <!-- Footer -->
            

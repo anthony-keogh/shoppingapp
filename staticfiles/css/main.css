@@ -12,8 +12,15 @@ h2{
   }
   }
   
+  select{
+    font-family: inherit;
+    font-size: large;
+    line-height: inherit;
+}
 
-
+.img-rounded:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
   div.bck-color{
       height:70px;
@@ -56,10 +63,7 @@ p.product-label{
   color:black;
 }
 
-  img.img-rounded{
-    
-    
-  }
+  
   .introduction-btn{
     background-color:  rgba(254,96,239,1);
     color:white;

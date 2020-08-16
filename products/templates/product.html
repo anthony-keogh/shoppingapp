@@ -1,5 +1,14 @@
 {% extends 'base.html' %}  {% load static %} 
 {% block content %}
+
+<style>
+label {
+    display: inline-block;
+    max-width: 100%;
+    font-size:large;
+    margin-bottom: 5px;
+    font-weight: 700;
+}</style>
 <div class="container"  >
   <h2 style="color:black; text-shadow:2px 2px white;">Your Order </h2>
     <div class="row">
@@ -23,13 +32,23 @@
 
       
           <a href="{% url 'purchase_product' %}" target="_blank">
-            <button style="background: rgb(231,2,221);background: linear-gradient(90deg, rgba(231,2,221,1) 23%, rgba(254,96,239,1) 58%, rgba(255,0,254,1) 100%);height:60px; width:80px; color:white;">BUY</button>
+            <button style="background: rgb(231,2,221);background: linear-gradient(90deg, rgba(231,2,221,1) 23%, rgba(254,96,239,1) 58%, rgba(255,0,254,1) 100%);height:60px; width:120px; color:white;">BUY NOW</button>
           </a>
             <button style="background: rgb(9,9,9);background: linear-gradient(90deg, rgba(9,9,9,1) 38%, rgba(121,121,121,1) 83%, rgba(161,161,161,1) 100%);height:60px; width:120px; color:white;"ng-click="count = count + 1">ADD TO CART</button>
           </a>
-          <div style="height:50px;"></div>
-            <p style="font-size:20px; color:#b002ad;">Free Delivery if you spend over €70</p>
+          <div style="height:100px;"></div>
+          
+            <p style="font-size:20px; color:#b002ad;">Free Delivery if you spend over €100</p>
+            <br>
+            <p style="font-size:20px; color:black;" >Description</p>
+            <br>
+            <p style="font-size:20px; color:black;" >Additional information</p>
+            <br>
+            <p style="font-size:20px; color:black;" >Reviews </p>
+
+
           </div>
+          
         </div>
       </div>
     </div>
