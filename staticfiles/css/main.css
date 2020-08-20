@@ -57,6 +57,12 @@ p.white-text{
   color:white;
 }
 
+
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
 p.product-label{
   font-size:15px;
   font-weight: 600;
