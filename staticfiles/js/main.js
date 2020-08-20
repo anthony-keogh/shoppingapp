@@ -14,3 +14,22 @@ var app = angular.module('myApp').config(function($interpolateProvider) {
 });
 
 
+
+$('.likebutton').click(function(){
+    
+$.ajax(
+    {
+        type:"GET",
+        url: "/likeproduct",
+        dataType:'json',
+        success: function(data) 
+        {
+          console.log(JSON.stringify(data))  
+        },
+        error: function(request, status, error){
+            console.log("Error:"+ error)
+        }
+     });
+});
+
+

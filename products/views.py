@@ -25,9 +25,7 @@ def new_stock(request):
 #def product(request):
 #    return render(request, 'product.html')
 
-@login_required(login_url='login')
-def your_cart(request):
-    return render(request, 'your_cart.html')
+
 
 @login_required(login_url='login')
 def loved_product(request):
@@ -47,3 +45,6 @@ def product(request):
         sizefittingform = size_form()
         
     return render(request, "product.html",{'sizefittingform':sizefittingform})
+
+
+
