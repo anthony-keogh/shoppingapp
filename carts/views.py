@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-#from .forms import cart_form
+from django.contrib.auth.models import User
 #from django.http import HttpResponse, JsonResponse
 #from django.views.decorators.csrf import csrf_exempt
 #from rest_framework.parsers import JSONParser
@@ -11,7 +11,10 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url='login')
 def your_cart(request):
-    return render(request, 'your_cart.html')
+  if request.method == 'GET':
+    user = User.objects.get(username=request.user.username)
+    
+    return render(request, 'your_cart.html', { 'user': user})
 
 #@csrf_exempt
 #def snippet_list(request):

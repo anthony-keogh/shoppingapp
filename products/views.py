@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect
 from accounts.views import login
 from products.forms import size_form
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -25,11 +26,14 @@ def new_stock(request):
 #def product(request):
 #    return render(request, 'product.html')
 
-
-
 @login_required(login_url='login')
 def loved_product(request):
-    return render(request, 'loved_product.html')
+  if request.method == 'GET':
+    user = User.objects.get(username=request.user.username)
+    
+    return render(request, 'loved_product.html', { 'user': user})
+
+
 
 
 @login_required(login_url='login')
