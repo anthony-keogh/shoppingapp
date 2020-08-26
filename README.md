@@ -1,6 +1,6 @@
 ﻿# shoppingapp
 
-Project’s Core Functionality
+###########  Project’s Core Functionality   ##############
 
 • Solid Structure and architecture:
 
