@@ -1,25 +1,25 @@
 ﻿# shoppingapp
 
-###########  Project’s Core Functionality   ##############
+#  Project’s Core Functionality  
 
-• Solid Structure and architecture:
+# • Solid Structure and architecture:
 
 The whole website was built and designed around data and the user experience. To attractive users with stylish website, get them to sign up with robust backend code and the using a very well structure framework.
 
-• Great UX & UI:
+# • Great UX & UI:
 
 The projects main design goal is to make the experience and navigation look effortless through each page and create a pleasant feel for the user on a smart phone and desktop. A critical factor was to make the website very responsive for mobile and desktop.
 
-• Data centric Design:
+# • Data centric Design:
 
 The website app must be built around data to ensure we use to grow the user experience in the future and use this data that we collect to get a better understanding of what the user likes and dislikes. The website in the future can be more tailored to our best users based on the feedback and data we collect.
 
-• A stunning visual website app:
+# • A stunning visual website app:
 
 To show off to the user with stunning design features on the website and incredible images to enhance their perception about our service. To do this I have incorporating stunning css and bootstrap elements to each page and brought the pages to light by minimising some section and stretching others to great that amazing effect of design within each page.
 
 
-Framework
+# Framework
 
 AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.
 
@@ -28,7 +28,7 @@ Django is a high-level Python web framework that enables rapid development of se
 
 
 
-Color Scheme
+# Color Scheme
  
 rgba(254,35,246,1) 41%,
 
@@ -50,7 +50,7 @@ color: #333;   (Footer)
 box-shadow: -1px 44px 48px -18px rgba(0,0,0,0.75);
 
 
-UX
+# UX
 
 User Stories
 
@@ -76,12 +76,12 @@ User Interface
 
 
 
-Icons
+# Icons
 https://www.w3schools.com/icons/bootstrap_icons_glyphicons.asp
 
 
 
-Typography
+# Typography
 
 font-family: Florence;
 
@@ -92,15 +92,15 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
 
 
-Wireframe
+# Wireframe
 
 
 
-Features
+# Features
 
 
 
-Technologies Used
+# Technologies Used
 
 •	Visual Studio Code
 
@@ -112,7 +112,7 @@ Technologies Used
 
 •	Adobe illustrator
 
-Front-End Technologies
+# Front-End Technologies
 
 •	Html5
 
@@ -124,7 +124,7 @@ Front-End Technologies
 
 •	Stripe API
 
-Back-End Technologies
+# Back-End Technologies
 
 •	Python 3.6.7
 
@@ -135,7 +135,7 @@ Back-End Technologies
 •	PostgresSQL
 
 
-Testing
+# Testing
 
 Validators
 
@@ -150,38 +150,38 @@ Python
 
 
 
-Schema model for database
+# Schema model for database
 
 
 
 
-Deployment
+# Deployment
 
-Local Deployment
+# Local Deployment
 
-Remote Deployment
+# Remote Deployment
 
 
-• System Variables
+# • System Variables
 
 Without proper planning in terms of system variables the app can be much harder to run and spot any errors which I encounter with leaving out a few pieces of code. It’s the back bone of getting the app to deploy properly and something that I will pay more attention to it to avoid mistakes in the future. (secret_key, database_url, stripe_secret). The experience and training from the flask app was put to good use to make the system variables in django a success.
 
-• gitignore
+# • gitignore
 
 Using gitignore was very straightforward and is used to hide key pieces of secret information by combining it with settings.py and env.py and then therefore telling gitignore to hide env.py in github.
 
-• Procfile
+# • Procfile
 
 I had issues with the Procfile in the flask app and I made sure to take note and not make the same mistake again for the django app. From learning from my mistakes I quickly got on with writing the Procfile with ease this time.
 
-• Config Vars
+# • Config Vars
 
 Working with config vars in heroku was very simple to use containing the postgresql key and value which was then inserting in my env.py file.
 
 
 
 
-Credits and Acknowledgements
+# Credits and Acknowledgements
 
 • W3schools
 
