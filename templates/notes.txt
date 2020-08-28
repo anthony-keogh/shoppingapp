@@ -1,3 +1,6 @@
+templateUrl: './app.component.html',
+
+
 {$ count $}
 {$ count2 $}
 
