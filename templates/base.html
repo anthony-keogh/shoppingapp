@@ -20,17 +20,17 @@
 
 
 
-  <script type="text/javascript" src="{% static 'carts/angularjs-app/runtime.js' %}"></script>
-  <script type="text/javascript" src="{% static 'carts/angularjs-app/polyfills.js' %}"></script>
-  <script type="text/javascript" src="{% static 'carts/angularjs-app/styles.js' %}"></script>
-  <script type="text/javascript" src="{% static 'carts/angularjs-app/vendor.js' %}"></script>
-  <script type="text/javascript" src="{% static 'carts/angularjs-app/main.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/ang/runtime.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/ang/polyfills.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/ang/styles.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/ang/vendor.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/ang/main.js' %}"></script>
  
 
 
 
 </head>
-
+<app-root></app-root>
 
 <body ng-app="myApp" ng-controller="myCtrl"> 
   
@@ -96,7 +96,7 @@
             <div></div>
             <span class="glyphicon glyphicon-heart">
               <span  style="color:black;" >
-                {$ count2 $}
+                
               </span></span>
           </a>
         </li>
@@ -104,7 +104,7 @@
           <a href="{% url 'your_cart' %}" class="btn btn-info btn-lg shop-icon">
             <span class="glyphicon glyphicon-shopping-cart">
               <span  style="color:black;"  >
-                {$ count $}
+                
               </span>
             </span>
           </a>
