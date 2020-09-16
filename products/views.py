@@ -47,10 +47,13 @@ def product(request):
     products = Product_item.objects.all()
     if request.method=='POST':
         sizefittingform = size_form(request.POST)
+
         if sizefittingform.is_valid():
+
             sizefittingform.save()
+
             return redirect('purchase_product.html')
-            #messages.success(request, 'You have successfully created an account')
+            
             
  
     else:
