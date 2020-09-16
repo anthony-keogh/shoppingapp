@@ -15,10 +15,11 @@ label {
       <div class="col-md-6">
         <img src="/static/img/fitting-room.jpg" alt="Lights" class="img-rounded" style="width:325px; height:400px;">
       </div>
+    {% for product in products %}
     
       <div class="col-md-6">
         <div>
-          <p class="product-font">Name of product
+          <p class="product-font">{{ product.name }}
            
           </p>
       </div>   
@@ -39,15 +40,17 @@ label {
           
             <p style="font-size:20px; color:#b002ad;">Free Delivery if you spend over €100</p>
             <br>
-            <p style="font-size:20px; color:black;" >Description</p>
+            <p style="font-size:20px; color:#b002ad;" >Description</p>
             <br>
-            <p style="font-size:20px; color:black;" >Additional information</p>
+            <p style="font-size:20px; color:black;">{{ product.description }}</p>
             <br>
-            <p style="font-size:20px; color:black;" >Reviews </p>
+            <p style="font-size:20px; color:#b002ad;" >Additional information</p>
+            <br>
+            
 
 
           </div>
-          
+          {% endfor %}
         </div>
       </div>
     </div>

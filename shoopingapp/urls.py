@@ -29,6 +29,8 @@ from carts.views import your_cart #, loved_product #cart_clicked
 #from orders.views import library, order_detail, order_list
 from products.views import dresses, coats, tops, jeans, new_stock, product, loved_product #likeProduct #, loved_product
 from billing.views import purchase_product
+from products import urls as products_urls
+from django.urls import include, re_path
 
 
 
@@ -49,7 +51,7 @@ urlpatterns = [
     path('register/',register, name='register'),
     path('profile/',profile, name='profile'),
     path('login/',login, name='login'),
-    
+    path('product/', include(products_urls)),
     path('coats/',coats, name='coats'),
     path('jeans/',jeans, name='jeans'),
     path('new_stock/',new_stock, name='new_stock'),
@@ -58,6 +60,7 @@ urlpatterns = [
     path('product/',product, name='product'),
     path('your_cart/',your_cart, name='your_cart'),
     path('loved_product/',loved_product, name='loved_product'),
+    path('product', product, name="product"),
     #path('accounts/login/?next=/loved_product/',error_login, name='error_login'),
     #path('prev_address/',prev_address, name='prev_address'),
     #path('list/',list, name='list'),

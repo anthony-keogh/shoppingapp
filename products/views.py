@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404, redirect
 from accounts.views import login
 from products.forms import size_form
 from django.contrib.auth.models import User
+from products.models import Product_item
 
 # Create your views here.
 
@@ -34,10 +35,16 @@ def loved_product(request):
     return render(request, 'loved_product.html', { 'user': user})
 
 
-
+def product_page(request):
+    products = Product_item.objects.all()
+    context = {
+        'products': products
+    }
+    return render(request, 'shop.html', context)
 
 @login_required(login_url='login')
 def product(request):
+    products = Product_item.objects.all()
     if request.method=='POST':
         sizefittingform = size_form(request.POST)
         if sizefittingform.is_valid():
@@ -49,7 +56,7 @@ def product(request):
     else:
         sizefittingform = size_form()
         
-    return render(request, "product.html",{'sizefittingform':sizefittingform})
+    return render(request, "product.html",{'sizefittingform':sizefittingform,'products':products})
 
 
 
