@@ -17,6 +17,14 @@ h2{
     font-size: large;
     line-height: inherit;
 }
+
+
+
+@media only screen and(max-width: 767px){
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: white;
+}
+}
 @media only screen and (min-width: 900px){
 .img-rounded:hover {
   transform: scale(1.1); 
