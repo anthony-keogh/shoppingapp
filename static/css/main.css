@@ -52,6 +52,15 @@ p.profile-paragraph{
   border-color: #fcfcfc00;
 }
 
+button.jeans-btn{
+  -webkit-box-shadow: -3px -2px 53px 20px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px -2px 53px 20px rgba(0,0,0,0.75);
+box-shadow: -3px -2px 53px 20px rgba(0,0,0,0.75);
+
+  
+}
+
+
   div.col-md-4{
     padding-top: 20px;
     padding-bottom: 20px;
