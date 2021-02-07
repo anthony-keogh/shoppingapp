@@ -14,8 +14,8 @@ def coats(request):
     return render(request, 'coats.html', {'products':products})
 
 def dresses(request):
+    #products = Product_item.objects.filter(clothes_category=dresses)
     products = Product_item.objects.all()
-    
     return render(request, 'dresses.html', {'products':products})
 
 def tops(request):
