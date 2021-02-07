@@ -12,39 +12,33 @@
 </div>
 <div style="display: flex;
     align-items: center;
-    justify-content: center; margin-top:-50px;">
+    justify-content: center; margin-top:-46px;">
 <a href="{% url 'register' %}"><button type="button" class="btn  introduction-btn btn-lg" >Sign Up</button></a>
 <br>
 <a href="{% url 'new_stock' %}"><button type="button" class="btn  introduction-btn2 btn-lg" >New Stock</button></a>
 </div>
 
 
-
-
- <div class="container-fluid introduction" style="height:900px; background-image:url('{% static "img/jeans-123.jpg" %}'); background-size: cover; background-repeat: no-repeat; background-position: 80% 80%;
-    " >
-  
-  <h1 style="color:white; font-weight: bold;text-align:center; text-shadow: 2px 2px black;">Stunning Jeans For Women</h1>
-  <p style="color:white;font-size:20px; font-weight: bold;text-align:center; text-shadow: 2px 2px black;">Jeans made to be comfortable and long lasting. <br>
-  <br><br><a href="{% url 'jeans' %}" style="color:white;"><button type="button" class="btn btn-warning btn-lg jeans-btn" >Jeans</button></a>
-  <div ></p>
-    
-    
-  
-  </div>
-</div>   
-<br><br>
-    <div class="container-fluid jeans-section " style="background: linear-gradient(90deg, rgba(231,2,221,1) 23%, rgba(254,96,239,1) 58%, rgba(255,0,254,1) 100%);
-}">
-    
-    <h5 style="color:white; text-align:center; font-size:30px; margin-top:35px;">Made in Europe</h5>
-    <br><p style="color:white; text-align:center; font-size:20px; margin-top:25px;">High quality women's clothing line made from the finest material in France and Italy.</p>
-    <p style="color:white; text-align:center; font-size:20px; margin-top:25px;">The comfort of the clothing is exceptional and durability is of the highest standard</p>
-    <p style="color:white; text-align:center; font-size:20px; margin-top:25px;">High class Style, Make and Comfort fashion clothing</p>
-    </div>
-
- 
-  
+<div style="height:100px;"></div>
+<div class="container-fluid">
+ <div class="row">
+{% for product in products %}
+    <a href="{% url 'product' pk=product.pk %}" >
+          <div class="col-sm-3" style="box-shadow: -1px 44px 48px -18px rgb(0 0 0 / 75%);width:370px; height:400px; margin-top:50px;">
+              <img src="/static/img/pic-10.png" alt="Lights" class="img-rounded" style="width:350px; height:350px;">
+                      <p style="margin-left:5%; font-weight:bold; color:black;"><br>
+                          {{ product.name }}
+                              <span style="padding:20px;"></span>
+                                <span style="font-weight:bold; color:#cc0099;"> $ {{ product.price }} </span>
+                                    <span class="glyphicon glyphicon-heart" style="margin-left:25%;color:black;" ></span>
+                                        <button  class="glyphicon glyphicon-shopping-cart" style="margin-left:10px; color:#cc0099;" ></button>
+                              
+                      </p>  
+          </div>
+{% endfor %}   
+</div>
+</div>
+<div style="height:100px;"></div>
 
 
 {% endblock %}
