@@ -1,94 +1,22 @@
 {% extends 'base.html' %}  {% load static %} 
 {% block content %}
-<div class="container" >
-  <h2 style="color:black; text-shadow:2px 2px white;">Jeans</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <a href="{% url 'product' %}" target="_blank">
-          <img src="/static/img/pic-28.png" alt="Lights" class="img-rounded" style="width:100%; height:370px;">
-            <p  class=" product-label">Silk Blue Jeans 
-              <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;">
-                <span class="glyphicon glyphicon-heart" style="color:black;" ></span>
-              </a>
-                <button  class="glyphicon glyphicon-shopping-cart"  ></button>
-                <span style="margin-left:20%;">$65</span>
-            </p>
-        </a>
-      </div>
-
-    <div class="col-md-4">
-      <a href="{% url 'product' %}" target="_blank">
-        <img src="/static/img/pic-29.png" alt="Nature" class="img-rounded" style="width:100%; height:370px;">
-          <p  class=" product-label">Dark Blue Jeans 
-            <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;">
-              <span class="glyphicon glyphicon-heart" style="color:black;" ></span>
-            </a>
-              <button  class="glyphicon glyphicon-shopping-cart"  ></button>
-              <span style="margin-left:20%;">$65</span>
-          </p>
-      </a>
-    </div>
-
-
-    <div class="col-md-4">
-      <a href="{% url 'product' %}" target="_blank">
-        <img src="/static/img/pic-30.png" alt="Fjords" class="img-rounded" style="width:100%; height:370px;">
-          <p  class=" product-label">Cut Jeans 
-            <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;">
-              <span class="glyphicon glyphicon-heart" style="color:black;" ></span>
-            </a>
-              <button  class="glyphicon glyphicon-shopping-cart"  ></button>
-              <span style="margin-left:20%;">$65</span>
-          </p>
-      </a> 
-    </div>
-  </div>
-</div>
-</div>
 
 <div style="height:50px;"></div>
-
-<div class="container" >
-  <div class="row">
-    <div class="col-md-4">
-      <a href="{% url 'product' %}" target="_blank">
-        <img src="/static/img/pic-5.png" alt="Lights" class="img-rounded" style="width:100%; height:370px;">
-          <p class=" product-label">Faded Blue Jeans 
-            <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;">
-              <span class="glyphicon glyphicon-heart" style="color:black;" ></span>
-            </a>
-              <button  class="glyphicon glyphicon-shopping-cart"  ></button>
-              <span style="margin-left:20%;">$65</span>
-          </p>
-      </a>
-    </div>
-
-    <div class="col-md-4">
-      <a href="{% url 'product' %}" target="_blank">
-        <img src="/static/img/pic-6.png" alt="Nature" class="img-rounded" style="width:100%; height:370px;">
-          <p class=" product-label">Light Cut Jeans 
-            <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;">
-              <span class="glyphicon glyphicon-heart" style="color:black;" ></span>
-            </a>
-              <button  class="glyphicon glyphicon-shopping-cart"  ></button>
-              <span style="margin-left:20%;">$65</span>
-          </p>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <a href="{% url 'product' %}" target="_blank">
-        <img src="/static/img/pic-7.png" alt="Fjords" class="img-rounded" style="width:100%; height:370px;">
-          <p class=" product-label">Classic Blue Jeans 
-            <a href="#"   class="btn btn-info btn-lg shop-icon heart-black-icon" style="background-color:white;">
-              <span class="glyphicon glyphicon-heart" style="color:black;" ></span>
-            </a>
-              <button  class="glyphicon glyphicon-shopping-cart"  ></button>
-              <span style="margin-left:20%;">$65</span>
-          </p>
-      </a> 
-    </div>
-  </div>
-</div>
+<div class="row">
+{% for product in products %}
+    <a href="{% url 'product' pk=product.pk %}" >
+          <div class="col-sm-3" style="box-shadow: -1px 44px 48px -18px rgb(0 0 0 / 75%);width:370px; height:400px;">
+              <img src="/static/img/pic-10.png" alt="Lights" class="img-rounded" style="width:350px; height:350px;">
+                      <p style="margin-left:5%; font-weight:bold; color:black;"><br>
+                          {{ product.name }}
+                              <span style="padding:20px;"></span>
+                                 $ {{ product.price }} 
+                                    <span class="glyphicon glyphicon-heart" style="margin-left:25%;color:#cc0099;" ></span>
+                                        <button  class="glyphicon glyphicon-shopping-cart" style="margin-left:10px; color:blue;" ></button>
+                              
+                      </p>  
+          </div>
+{% endfor %}   
 </div>
 
 <div style="height:50px;"></div>

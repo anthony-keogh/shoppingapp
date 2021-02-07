@@ -5,27 +5,32 @@ from accounts.views import login
 from products.forms import size_form
 from django.contrib.auth.models import User
 from products.models import Product_item
+from django.urls import reverse
 
 # Create your views here.
 
 def coats(request):
-    
-    return render(request, 'coats.html')
+    products = Product_item.objects.all()
+    return render(request, 'coats.html', {'products':products})
 
 def dresses(request):
-    return render(request, 'dresses.html')
+    products = Product_item.objects.all()
+    
+    return render(request, 'dresses.html', {'products':products})
 
 def tops(request):
-    return render(request, 'tops.html')
+    products = Product_item.objects.all()
+    return render(request, 'tops.html' , {'products':products})
 
 def jeans(request):
-    return render(request, 'jeans.html')
+    products = Product_item.objects.all()
+    return render(request, 'jeans.html', {'products':products})
 
 def new_stock(request):
-    return render(request, 'new_stock.html')
+    products = Product_item.objects.all()
+    return render(request, 'new_stock.html', {'products':products})
 
-#def product(request):
-#    return render(request, 'product.html')
+
 
 @login_required(login_url='login')
 def loved_product(request):
@@ -35,16 +40,15 @@ def loved_product(request):
     return render(request, 'loved_product.html', { 'user': user})
 
 
-def product_page(request):
-    products = Product_item.objects.all()
-    context = {
-        'products': products
-    }
-    return render(request, 'shop.html', context)
+def shop(request):
+    
+
+    return render(request, 'shop.html')
 
 @login_required(login_url='login')
-def product(request):
-    products = Product_item.objects.all()
+def product(request, pk):
+    product = Product_item.objects.get(pk=pk)
+    #products = Product_item.objects.all()
     if request.method=='POST':
         sizefittingform = size_form(request.POST)
 
@@ -59,7 +63,7 @@ def product(request):
     else:
         sizefittingform = size_form()
         
-    return render(request, "product.html",{'sizefittingform':sizefittingform,'products':products})
+    return render(request, "product.html",{'product':product,'sizefittingform':sizefittingform})
 
 
 

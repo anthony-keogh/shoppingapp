@@ -31,6 +31,7 @@ from products.views import dresses, coats, tops, jeans, new_stock, product, love
 from billing.views import purchase_product
 from products import urls as products_urls
 from django.urls import include, re_path
+from django.conf.urls import url, include
 
 
 
@@ -57,26 +58,13 @@ urlpatterns = [
     path('new_stock/',new_stock, name='new_stock'),
     path('tops/',tops, name='tops'),
     path('dresses/',dresses, name='dresses'),
-    path('product/',product, name='product'),
+    #path('product/',product, name='product'),
     path('your_cart/',your_cart, name='your_cart'),
     path('loved_product/',loved_product, name='loved_product'),
-    path('product', product, name="product"),
-    #path('accounts/login/?next=/loved_product/',error_login, name='error_login'),
-    #path('prev_address/',prev_address, name='prev_address'),
-    #path('list/',list, name='list'),
-    #path('form/',form, name='form'),
-    #path('sales/',sales, name='sales'),
+    
     path('purchase_product/',purchase_product, name='purchase_product'),
-    #path('like_category/',like_category, name='like_category'),
-    #path('checkout_done/',checkout_done, name='checkout_done'),
-    #path('checkout/',checkout, name='checkout'),
-    #path('home/',home, name='home'),
-    #path('library/',library, name='library'),
-    #path('order_list/',order_list, name='order_list'),
-    #path('order_detail/',order_detail, name='order_detail'),
-    #path('detail/',detail, name='detail'),
-    #path('feature_detail/',feature_detail, name='feature_detail'),
-    #path('list/',list, name='list'),
-    #path('user_history/',user_history, name='user_history'),
+    #url(r'^shop/', include(products_urls)),
+    path('product/', include(products_urls)),
+    
 ]
 

@@ -14,19 +14,17 @@ def profile(request):
 
 def register(request):
     if request.method == 'POST':
-        userform = UserRegistrationForm(request.POST)
-        if userform.is_valid():
-            userform.save()
+        user_form = UserRegistrationForm(request.POST)
+        if user_form.is_valid():
+            user_form.save()
 
 
             messages.success(request, 'You have successfully created an account')
             return redirect('register')
  
     else:
-        userform = UserRegistrationForm()
-        context = {
-        "userform": userform,
-    }
+        user_form = UserRegistrationForm()
+    context = {"user_form": user_form}
  
     return render(request, "register.html",context)
 
