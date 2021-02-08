@@ -1,7 +1,7 @@
 ![Optional Text](../master/static/img/zara-grace-screenshot.PNG)
 
 
-![Optional Text](../master/static/img/zara-moble-screenshot.PNG)![Optional Text](../master/static/img/zara-product-screenshot.PNG)![Optional Text](../master/static/img/zara-materials.PNG)![Optional Text](../master/static/img/zara-footer-screenshot.PNG)![Optional Text](../master/static/img/zara-footer-screenshot.PNG)
+![Optional Text](../master/static/img/zara-moble-screenshot.PNG)![Optional Text](../master/static/img/zara-product-screenshot.PNG)![Optional Text](../master/static/img/zara-materials.PNG)![Optional Text](../master/static/img/zara-footer-screenshot.PNG)![Optional Text](../master/static/img/zara-design.PNG)
 
 # UX
 
