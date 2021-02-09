@@ -19,6 +19,8 @@ https://zara-grace.herokuapp.com/
 
 # Wireframes
 
+Index page wireframe below for desktop
+
 ![Optional Text](../master/static/img/zara-wireframe-1.png)
 
 # Features
