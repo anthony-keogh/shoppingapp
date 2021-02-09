@@ -95,6 +95,14 @@ Testing File
 
   # Local Deployment
   
+  • Python 
+  
+  • GIT 
+  
+  • PIP
+  
+  • Visual Studio Code(Microsoft)
+  
   # Remote Deployment
   
 # Credits
