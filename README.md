@@ -105,7 +105,17 @@ Testing File
   
   # Remote Deployment
   
+  •  Heroku
+  
 # Credits
+
+• https://www.w3schools.com/
+
+• https://docs.djangoproject.com/en/3.1/intro/tutorial01/
+
+• https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website
+
+• https://getbootstrap.com/
 
 # Media
 
