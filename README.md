@@ -19,6 +19,7 @@ https://zara-grace.herokuapp.com/
 
 # Wireframes
 
+![Optional Text](../master/static/img/zara-design.PNG)
 
 # Features
 
