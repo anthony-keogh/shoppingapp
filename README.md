@@ -81,7 +81,15 @@ Testing File
 
 
 # Compatibility
+• Chrome 
 
+• Firefox
+
+• Safari 
+
+• Internet Explorer
+
+• Edge
 
 # Deployment
 
@@ -94,4 +102,4 @@ Testing File
 # Media
 
 # Acknowledgements
-# Credits
+
