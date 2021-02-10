@@ -10,6 +10,30 @@ https://zara-grace.herokuapp.com/
 
 # User Stories
 
+• The software application should load fast
+
+• View all the clothes on the app
+
+• Click on any product and be directed to a page with more description about that specific product
+
+• Click on the "Buy Now" button and be directed to the payment methods such as Stripe
+
+• Click on the "Cart" button and be directed to the cart page with my information
+
+• Click on the "Loved Product" button and be directed to the "Loved Product" page with my information
+
+• Press the sign up button and be shown the sign up page
+
+• The sign up form to work correctly
+
+• Press the login button and be shown the login page and shown information about my account
+
+• The login form to work correctly
+
+• Shopping application to work on all browsers
+
+• Shopping application to should be user friendly on smartphone
+
 
 # Design
 
