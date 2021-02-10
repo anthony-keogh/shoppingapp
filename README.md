@@ -12,6 +12,10 @@ https://zara-grace.herokuapp.com/
 
 Successful   ![Optional Text](../master/static/img/green-correct.png)
 
+Not Successful    ![Optional Text](../master/static/img/red-error.png)
+
+
+
 • The software application should load fast  ![Optional Text](../master/static/img/green-correct.png)
 
 • View all the clothes on the app   ![Optional Text](../master/static/img/green-correct.png)
