@@ -38,7 +38,7 @@ Not Successful    ![Optional Text](../master/static/img/red-error.png)
 
 • Shopping application to work on all browsers   ![Optional Text](../master/static/img/green-correct.png)
 
-• Shopping application to should be user friendly on smartphone
+• Shopping application to should be user friendly on smartphone  ![Optional Text](../master/static/img/green-correct.png)
 
 
 # Design
