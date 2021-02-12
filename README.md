@@ -92,6 +92,8 @@ Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc
 
    # Front-End Technologies
    
+   ![Optional Text](../master/static/img/html-css-javascript.png)
+   
    • HTML
 
 Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
