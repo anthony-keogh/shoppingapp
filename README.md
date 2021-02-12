@@ -5,8 +5,9 @@ https://zara-grace.herokuapp.com/
 
 ![Optional Text](../master/static/img/zara-moble-screenshot.PNG)![Optional Text](../master/static/img/zara-product-screenshot.PNG)![Optional Text](../master/static/img/zara-materials.PNG)
 
-
+<h1 class="text-blue">
 # Gathering
+</h1>
 
 
 # UX
