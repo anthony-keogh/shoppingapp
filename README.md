@@ -5,6 +5,10 @@ https://zara-grace.herokuapp.com/
 
 ![Optional Text](../master/static/img/zara-moble-screenshot.PNG)![Optional Text](../master/static/img/zara-product-screenshot.PNG)![Optional Text](../master/static/img/zara-materials.PNG)![Optional Text](../master/static/img/zara-footer-screenshot.PNG)![Optional Text](../master/static/img/zara-design.PNG)
 
+
+# Gathering
+
+
 # UX
 
 
@@ -41,6 +45,17 @@ Not Successful    ![Optional Text](../master/static/img/red-error.png)
 • Shopping application to should be user friendly on smartphone  ![Optional Text](../master/static/img/green-correct.png)
 
 
+
+# Data Architecture
+
+
+# Data Modeling
+    # Object Model Design
+    
+
+# Schema Design
+
+
 # Design
 
   • Framework
@@ -54,6 +69,10 @@ Index page wireframe below for desktop
 ![Optional Text](../master/static/img/zara-wireframe-1.png)
 
 # Features
+
+
+# Impactful Dashboards and Data Visualisation for this application
+
 
 
 # Technologies Used
