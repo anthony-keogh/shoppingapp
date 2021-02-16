@@ -29,6 +29,13 @@ h2{
 .img-rounded:hover {
   transform: scale(1.1); 
 }
+.row.row-index-page{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
 }
   div.bck-color{
       height:70px;

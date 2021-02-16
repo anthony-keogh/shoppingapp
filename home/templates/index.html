@@ -21,11 +21,11 @@
 
 <div style="height:100px;"></div>
 <div class="container-fluid">
- <div class="row row-index-page" style="margin-left:0%;">
+ <div class="row row-index-page" style="">
 {% for product in productscoat %}
     <a href="{% url 'product' pk=product.pk %}" >
-          <div class="col-sm-3" style="box-shadow: -1px 44px 48px -18px rgb(0 0 0 / 75%);width:370px; height:400px; margin-top:50px;">
-              <img src="/static/img/brown-jacket.jpeg" alt="Lights" class="img-rounded" style="width:350px; height:350px;">
+          <div class="col-sm-3" style="box-shadow: -1px 44px 48px -18px rgb(0 0 0 / 75%);width:340px; height:400px; margin-top:50px;">
+              <img src="/static/img/brown-jacket.jpeg" alt="Lights" class="img-rounded" style="width:310px; height:350px;">
                       <p style="margin-left:5%; font-weight:bold; color:black;"><br>
                           {{ product.name }}
                               <span style="padding:20px;"></span>
@@ -39,8 +39,8 @@
 
 {% for product in productsdress %}
     <a href="{% url 'product' pk=product.pk %}" >
-          <div class="col-sm-3" style="box-shadow: -1px 44px 48px -18px rgb(0 0 0 / 75%);width:370px; height:400px; margin-top:50px;">
-              <img src="/static/img/red-dresss.jpeg" alt="Lights" class="img-rounded" style="width:350px; height:350px;">
+          <div class="col-sm-3" style="box-shadow: -1px 44px 48px -18px rgb(0 0 0 / 75%);width:340px; height:400px; margin-top:50px;">
+              <img src="/static/img/red-dresss.jpeg" alt="Lights" class="img-rounded" style="width:310px; height:350px;">
                       <p style="margin-left:5%; font-weight:bold; color:black;"><br>
                           {{ product.name }}
                               <span style="padding:20px;"></span>
@@ -53,8 +53,8 @@
 {% endfor %}
 {% for product in productstops %}
     <a href="{% url 'product' pk=product.pk %}" >
-          <div class="col-sm-3" style="box-shadow: -1px 44px 48px -18px rgb(0 0 0 / 75%);width:370px; height:400px; margin-top:50px;">
-              <img src="/static/img/black-top2.jpeg" alt="Lights" class="img-rounded" style="width:350px; height:350px;">
+          <div class="col-sm-3" style="box-shadow: -1px 44px 48px -18px rgb(0 0 0 / 75%);width:340px; height:400px; margin-top:50px;">
+              <img src="/static/img/black-top2.jpeg" alt="Lights" class="img-rounded" style="width:310px; height:350px;">
                       <p style="margin-left:5%; font-weight:bold; color:black;"><br>
                           {{ product.name }}
                               <span style="padding:20px;"></span>
