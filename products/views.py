@@ -10,20 +10,20 @@ from django.urls import reverse
 # Create your views here.
 
 def coats(request):
-    products = Product_item.objects.all()
+    products = Product_item.objects.filter(name="brown coat")
     return render(request, 'coats.html', {'products':products})
 
 def dresses(request):
     #products = Product_item.objects.filter(clothes_category=dresses)
-    products = Product_item.objects.all()
+    products = products = Product_item.objects.filter(name="red dress")
     return render(request, 'dresses.html', {'products':products})
 
 def tops(request):
-    products = Product_item.objects.all()
+    products = products = Product_item.objects.filter(name="Black velvet top")
     return render(request, 'tops.html' , {'products':products})
 
 def jeans(request):
-    products = Product_item.objects.all()
+    products = products = Product_item.objects.filter(name="Designer blue Jeans")
     return render(request, 'jeans.html', {'products':products})
 
 def new_stock(request):

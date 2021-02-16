@@ -25,7 +25,8 @@ class Product_item(models.Model):
         default=TOPS,
     )
    
-
+    #class Meta: 
+      #  ordering = ['id'] 
 
     #def get_absolute_url(self,):
        # return reverse('products', args={self.pk})
