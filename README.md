@@ -84,6 +84,7 @@ Not Successful    ![Optional Text](../master/static/img/red-error.png)
 
 # Schema Design
 
+![Optional Text](..master/static/img/django-schema-design.png)
 
 # Design
 
