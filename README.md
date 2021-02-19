@@ -101,9 +101,6 @@ Index page wireframe below for desktop
 # Features
 
 
-# Impactful Dashboards and Data Visualisation for this application
-
-
 
 # Technologies Used
 
