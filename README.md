@@ -78,10 +78,13 @@ Not Successful    ![Optional Text](../master/static/img/red-error.png)
 
 # Data Modeling
      Object Model Design
+     
+![Optional Text](../master/static/img/postgresQL.jpeg)
     
 
 # Schema Design
 
+![Optional Text](../master/static/img/django-schema-design.png)
 
 # Design
 
@@ -96,9 +99,6 @@ Index page wireframe below for desktop
 
 
 # Features
-
-
-# Impactful Dashboards and Data Visualisation for this application
 
 
 
