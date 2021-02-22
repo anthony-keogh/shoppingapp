@@ -44,6 +44,10 @@ Not Successful    ![Optional Text](../master/static/img/red-error.png)
    • Shopping application to work on all browsers   ![Optional Text](../master/static/img/green-correct.png)
 
    • Shopping application to should be user friendly on smartphone  ![Optional Text](../master/static/img/green-correct.png)
+   
+   • pick a product image and be directed to a specific page with that image, with price and more information     ![Optional Text](../master/static/img/red-error.png)
+           
+           - I did not use Amazon services for this project, so I could not retrieve the image again in a new page. This is one of the many advantages of AWS Services that I look forward to using more often in the future
 
 
 
@@ -51,28 +55,21 @@ Not Successful    ![Optional Text](../master/static/img/red-error.png)
 
      Data Architecture Characteristics
      
-       • User Driven
+       • User Driven   ![Optional Text](../master/static/img/green-correct.png)
        
-       • Built on shared data
+       • Built on shared data  ![Optional Text](../master/static/img/green-correct.png)
        
-       • Automated
+       • Automated    ![Optional Text](../master/static/img/red-error.png)
        
-       • Driven by AI
+       • Driven by AI    ![Optional Text](../master/static/img/red-error.png)
        
-       • Elastic
+       • Elastic    ![Optional Text](../master/static/img/red-error.png)
        
-       • Simple
+       • Simple   ![Optional Text](../master/static/img/green-correct.png)
        
-       • Secure
+       • Secure  ![Optional Text](../master/static/img/green-correct.png)
        
-       
-      Define Data Vision
-      
-      Define Data Architecture
-      
-      Define Structure
-      
-      Define Data Flows
+
     
 
 
@@ -99,6 +96,22 @@ Index page wireframe below for desktop
 
 
 # Features
+
+    • Register Account
+
+    • View Account
+
+    • Add Products
+
+    • Edit Products
+
+    • Delete Products
+
+    • View Products
+
+    • View Single Product
+
+    • Select Clothes size
 
 
 
