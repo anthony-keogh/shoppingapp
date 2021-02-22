@@ -55,19 +55,19 @@ Not Successful    ![Optional Text](../master/static/img/red-error.png)
 
      Data Architecture Characteristics
      
-       • User Driven   ![Optional Text](../master/static/img/green-correct.png)
+   User Driven   ![Optional Text](../master/static/img/green-correct.png)
        
-       • Built on shared data  ![Optional Text](../master/static/img/green-correct.png)
+   Built on shared data  ![Optional Text](../master/static/img/green-correct.png)
        
-       • Automated    ![Optional Text](../master/static/img/red-error.png)
+   Automated    ![Optional Text](../master/static/img/red-error.png)
        
-       • Driven by AI    ![Optional Text](../master/static/img/red-error.png)
+   Driven by AI    ![Optional Text](../master/static/img/red-error.png)
        
-       • Elastic    ![Optional Text](../master/static/img/red-error.png)
+   Elastic    ![Optional Text](../master/static/img/red-error.png)
        
-       • Simple   ![Optional Text](../master/static/img/green-correct.png)
+   Simple   ![Optional Text](../master/static/img/green-correct.png)
        
-       • Secure  ![Optional Text](../master/static/img/green-correct.png)
+   Secure  ![Optional Text](../master/static/img/green-correct.png)
        
 
     
