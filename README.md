@@ -90,7 +90,7 @@ Not Successful    ![Optional Text](../master/static/img/red-error.png)
 
 Index page wireframe below for desktop
 
-
+![Optional Text](../master/static/img/zara-wireframe-1.png)
 
 # Features
 
