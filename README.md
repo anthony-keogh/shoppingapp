@@ -215,3 +215,16 @@ https://github.com/anthony-keogh/shoppingapp/blob/master/static/img/djangotestin
 
 # Acknowledgements
 
+https://www.w3schools.com/
+
+https://docs.djangoproject.com/en/3.1/intro/tutorial01/
+
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/skeleton_website
+
+https://www.tutorialspoint.com/django/index.htm
+
+https://www.w3schools.com/css/css3_gradients.asp
+
+https://cssgradient.io/
+
+https://getbootstrap.com/docs/3.3/css/
