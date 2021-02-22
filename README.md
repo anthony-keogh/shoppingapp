@@ -172,6 +172,7 @@ Index page wireframe below for desktop
 
 Testing File
 
+https://github.com/anthony-keogh/shoppingapp/blob/master/static/img/djangotesting-converted.pdf
 
 # Compatibility
     • Chrome 
