@@ -10,10 +10,7 @@ https://zara-grace.herokuapp.com/
 
 
 
-# UX
-
-
-# User Stories
+# UX : User Stories
 
 Successful   ![Optional Text](../master/static/img/green-correct.png)
 
