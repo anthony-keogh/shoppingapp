@@ -172,7 +172,9 @@ Index page wireframe below for desktop
 
 Testing File
 
-https://github.com/anthony-keogh/shoppingapp/blob/master/static/img/djangotesting-converted.pdf
+Accounts > view.py
+
+![Optional Text](../master/static/img/python-test-django.PNG)
 
 # Compatibility
     • Chrome 
